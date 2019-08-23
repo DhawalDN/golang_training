@@ -1,10 +1,13 @@
-
-
 // Package toy contains support for managing toy inventory.
 package toy
 
-// Declare a struct type named Toy with four fields. Name string,
-// Weight int, onHand int and sold int.
+// Toy is exported type
+type Toy struct {
+	Name   string
+	Weight int
+	onHand int
+	sold   int
+}
 
 // Declare a function named New that accepts values for the
 // exported fields. Return a pointer of type Toy that is initialized
